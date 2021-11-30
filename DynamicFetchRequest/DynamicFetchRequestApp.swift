@@ -8,10 +8,15 @@
 import SwiftUI
 
 @main
-struct DynamicFetchRequestApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct DynamicFetchRequestApp: App
+{
+    @StateObject private var dataController = DataController()
+    
+    var body: some Scene
+    {
+        WindowGroup
+        {
+            ContentView().environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

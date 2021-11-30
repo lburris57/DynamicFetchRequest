@@ -11,6 +11,11 @@
 		91375DA22755EF460029FD69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91375DA12755EF460029FD69 /* ContentView.swift */; };
 		91375DA42755EF470029FD69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91375DA32755EF470029FD69 /* Assets.xcassets */; };
 		91375DA72755EF470029FD69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91375DA62755EF470029FD69 /* Preview Assets.xcassets */; };
+		91375DAE2755EF990029FD69 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91375DAD2755EF990029FD69 /* FilteredList.swift */; };
+		91375DB12755F67C0029FD69 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91375DAF2755F67C0029FD69 /* CoreDataModel.xcdatamodeld */; };
+		91375DB42755F7630029FD69 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91375DB22755F7630029FD69 /* Singer+CoreDataClass.swift */; };
+		91375DB52755F7630029FD69 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91375DB32755F7630029FD69 /* Singer+CoreDataProperties.swift */; };
+		91375DB72755FE490029FD69 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91375DB62755FE490029FD69 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		91375DA12755EF460029FD69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91375DA32755EF470029FD69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91375DA62755EF470029FD69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91375DAD2755EF990029FD69 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		91375DB02755F67C0029FD69 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		91375DB22755F7630029FD69 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Singer+CoreDataClass.swift"; path = "DynamicFetchRequest/Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		91375DB32755F7630029FD69 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Singer+CoreDataProperties.swift"; path = "DynamicFetchRequest/Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		91375DB62755FE490029FD69 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,8 @@
 		91375D932755EF460029FD69 = {
 			isa = PBXGroup;
 			children = (
+				91375DB22755F7630029FD69 /* Singer+CoreDataClass.swift */,
+				91375DB32755F7630029FD69 /* Singer+CoreDataProperties.swift */,
 				91375D9E2755EF460029FD69 /* DynamicFetchRequest */,
 				91375D9D2755EF460029FD69 /* Products */,
 			);
@@ -53,6 +65,9 @@
 			children = (
 				91375D9F2755EF460029FD69 /* DynamicFetchRequestApp.swift */,
 				91375DA12755EF460029FD69 /* ContentView.swift */,
+				91375DB62755FE490029FD69 /* DataController.swift */,
+				91375DAF2755F67C0029FD69 /* CoreDataModel.xcdatamodeld */,
+				91375DAD2755EF990029FD69 /* FilteredList.swift */,
 				91375DA32755EF470029FD69 /* Assets.xcassets */,
 				91375DA52755EF470029FD69 /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91375DB72755FE490029FD69 /* DataController.swift in Sources */,
 				91375DA22755EF460029FD69 /* ContentView.swift in Sources */,
+				91375DB52755F7630029FD69 /* Singer+CoreDataProperties.swift in Sources */,
 				91375DA02755EF460029FD69 /* DynamicFetchRequestApp.swift in Sources */,
+				91375DB42755F7630029FD69 /* Singer+CoreDataClass.swift in Sources */,
+				91375DB12755F67C0029FD69 /* CoreDataModel.xcdatamodeld in Sources */,
+				91375DAE2755EF990029FD69 /* FilteredList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		91375DAF2755F67C0029FD69 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				91375DB02755F67C0029FD69 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 91375DB02755F67C0029FD69 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 91375D942755EF460029FD69 /* Project object */;
 }
